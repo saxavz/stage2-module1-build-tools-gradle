@@ -23,7 +23,11 @@ public class IsAllPositiveNumbersTest {
                         true),
 
                 Arguments.of("Has Negative Num and Null",
-                        Arrays.asList("47", "3", "25", "13", "-7.131231", null, ""),
+                        Arrays.asList("47", "3", "25", "13", "-7.131231"),
+                        false),
+
+                Arguments.of("Only Invalid values",
+                        Arrays.asList("null", " ", null ),
                         false),
 
                 Arguments.of("All Negative Nums",
