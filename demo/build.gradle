@@ -1,8 +1,4 @@
 
-java {
-    sourceCompatibility = JavaVersion.VERSION_1_8
-}
-
 group = 'com.mjcschool.gradledemo1'
 version = '1.0'
 
