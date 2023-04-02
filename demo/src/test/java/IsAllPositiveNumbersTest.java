@@ -19,15 +19,15 @@ public class IsAllPositiveNumbersTest {
                         false),
 
                 Arguments.of("Only Positive Nums",
-                        Arrays.asList("47", "3", "25", "13", "7"),
+                        Arrays.asList("47.0001", "3", "25.003", "13", "7"),
                         true),
 
                 Arguments.of("Has Negative Num",
-                        Arrays.asList("47", "3", "25", "13", "-7"),
+                        Arrays.asList("47", "3", "25", "13", "-7.131231"),
                         false),
 
                 Arguments.of("All Negative Nums",
-                        Arrays.asList("-47", "-3", "-25", "-13", "-7"),
+                        Arrays.asList("-47", "-3", "-25.8923", "-13", "-7"),
                         false)
         );
     }
