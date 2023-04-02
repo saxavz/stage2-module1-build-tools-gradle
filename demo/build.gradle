@@ -1,7 +1,18 @@
-//add everything here
+
+group = 'com.mjcschool.gradledemo1'
+version = '1.0'
 
 test {
     useJUnitPlatform()
 }
+
+repositories {
+    mavenLocal()
+}
+
+dependencies {
+    implementation 'com.epam.utils:utils:1.3.5'
+}
+
 
 compileJava {}.dependsOn(':utils:publishToMavenLocal')

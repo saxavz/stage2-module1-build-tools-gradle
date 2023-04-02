@@ -1,7 +1,9 @@
 package com.epam.utils;
 
+import java.lang.*;
+
 public class StringUtils {
     public static boolean isPositiveNumber(String str) {
-         //here magic will happen
+        return Long.parseLong(str) > 0l;
     }
 }
